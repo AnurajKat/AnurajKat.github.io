@@ -1,0 +1,83 @@
+body{
+  background-color:#133433;
+  padding:40px;
+}
+p{
+  text-align: center;
+  font-size: 250%;
+  font-family: sans-serif;
+  color:#17DCD5;
+}
+a:link {
+    color: #00BFA5;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #E0F7FA;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #A7FFEB;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color:#E0F2F1;
+    background-color: transparent;
+    text-decoration: underline;
+}
+p.newp{
+  font-size: 250%;
+
+}
+h1.logoname{
+  
+  padding-top:80px;
+  border-color: transparent;
+  border:1px;
+  border-radius: 20px;
+  background-color: #165654;
+  text-align:center;
+  padding-bottom: 80px;
+  width:50%;
+  font-weight: lighter;
+  font-size: 65px;
+  font-family: Helvetica;
+  color:#17DCD5;
+}
+#loginfonts{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: #A7FFEB;
+}
+#makemecenter{
+    
+    border:none;
+}
+
+input[placeholder],[placeholder],*[placeholder]
+{
+    color:#E0F7FA !important;
+}
+
+input{
+        border: transparent;
+        font-size: 25px;
+        border-bottom: solid;
+        border-width: 1px;
+        border-color: #E0F2F1; 
+        background-color: transparent;
+        padding :2px 2px 0px 3px;
+        
+        text-align: left;
+}
+input:focus{
+    border: transparent;
+    border-bottom-color: darkcyan;
+}
+.container{
+    padding:2px;
+}
