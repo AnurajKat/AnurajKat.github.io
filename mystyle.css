@@ -1,6 +1,7 @@
 body{
   background-color:#133433;
-  padding:40px;
+  padding:10px;
+font font-family: fantasy;
 }
 p{
   text-align: center;
@@ -22,6 +23,7 @@ a:hover {
     color: #A7FFEB;
     background-color: transparent;
     text-decoration: underline;
+    
 }
 a:active {
     color:#E0F2F1;
@@ -34,7 +36,7 @@ p.newp{
 }
 h1.logoname{
   
-  padding-top:80px;
+  padding-top:75px;
   border-color: transparent;
   border:1px;
   border-radius: 20px;
@@ -51,7 +53,7 @@ h1.logoname{
     font-family: sans-serif;
     font-size: 25px;
     font-weight: normal;
-    color: #A7FFEB;
+    color: #165654;
 }
 #makemecenter{
     
@@ -64,20 +66,46 @@ input[placeholder],[placeholder],*[placeholder]
 }
 
 input{
-        border: transparent;
+        
+        border: none;
         font-size: 25px;
         border-bottom: solid;
         border-width: 1px;
         border-color: #E0F2F1; 
         background-color: transparent;
         padding :2px 2px 0px 3px;
-        
+        color:#165654;
         text-align: left;
 }
 input:focus{
     border: transparent;
     border-bottom-color: darkcyan;
+    outline:none;
+    color:#165654;
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-color: #E0F2F1; 
 }
-.container{
-    padding:2px;
+    
+
+button{
+    border:none;
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: transparent;
+    margin:8px 0;
+    padding:14px 50px;
+    color: #A7FFEB;
+}
+button:hover{
+    background-color: #165654;
+    outline:none;
+}
+button:active{
+    background-color:#A7FFEB; 
+    color:#165654;
+    outline:none;
+}
+button:focus{
+    outline:none;
 }
