@@ -1,121 +1,162 @@
-body{
-  background-color:#133433;
-  padding:10px;
-font font-family: fantasy;
-}
-p{
-  text-align: center;
-  font-size: 250%;
-  font-family: sans-serif;
-  color:#17DCD5;
-}
-a:link {
-    color: #00BFA5;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:visited {
-    color: #E0F7FA;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:hover {
-    color: #A7FFEB;
-    background-color: transparent;
-    text-decoration: underline;
-    
-}
-a:active {
-    color:#E0F2F1;
-    background-color: transparent;
-    text-decoration: underline;
-}
-p.newp{
-  font-size: 250%;
-
-}
-h1.logoname{
-  
-  padding-top:75px;
-  
-  border:none;
-  border-radius: 20px;
-  background-color: #165654;
-  text-align:center;
-  padding-bottom: 80px;
-  width:40%;
-  letter-spacing: 2px;
-  font-weight: lighter;
-  font-size: 65px;
-  font-family: Helvetica;
-  color:#17DCD5;
-}
-#loginfonts{
-    font-family: sans-serif;
-    font-size: 25px;
-    font-weight: normal;
-    color: #165654;
-    text-shadow: 0px 0px 5px #030808;
-}
-#makemecenter{
-    
-    border:none;
-}
-
-input[placeholder],[placeholder],*[placeholder]
-{
-    color:#E0F7FA !important;
-}
-
-input{
-        
-        border: none;
-        font-size: 25px;
-        border-bottom: solid;
-        border-width: 1px;
-        border-color: #E0F2F1; 
+   /*       login page css      */
+body.loginpage{
+      background-color:#133433;
+      
+     font-family: Helvetica;
+     
+    }
+   
+    p{
+      text-align: center;
+      font-size: 250%;
+      font-family: sans-serif;
+      color:#17DCD5;
+    }
+    a:link {
+        color: #00BFA5;
         background-color: transparent;
-        padding :2px 2px 0px 3px;
-        color:#165654;
-        text-align: left;
-}
-input:focus{
-    border: transparent;
-    border-bottom-color: darkcyan;
-    outline:none;
-    color:#165654;
-    text-decoration-color: #165654;
-    border-bottom: solid;
-    border-bottom-width: thin;
-    border-color: #E0F2F1; 
-}
-    
+        text-decoration: none;
+    }
+    a:visited {
+        color: #E0F7FA;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #A7FFEB;
+        background-color: transparent;
+        text-decoration: underline;
 
-button{
-    border:none;
-    font-size: 20px;
-    font-family: sans-serif;
-    background-color: transparent;
-    margin:8px 0;
-    padding:14px 50px;
-    color: #A7FFEB;
-    -webkit-transition: box-shadow 0.6s;
-}
-button:hover{
-    -webkit-transition: box-shadow 0.2s;
-    background-color: #165654;
-    color: #17DCD5;
-    box-shadow: 4px 4px 10px #071212; 
-    outline:none;
-}
-button:active{
-    background-color:#A7FFEB; 
-  /*  -webkit-transition: box-shadow 0.2s;*/
-    color:#165654;
-    box-shadow: none;
-    outline:none;
-}
-button:focus{
-   /* box-shadow: none;*/
-    outline:none;
+    }
+    a:active {
+        color:#E0F2F1;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    p.newp{
+      font-size: 250%;
+
+    }
+    h1.logoname{
+
+      padding-top:75px;
+     text-shadow: 0px 0px 1px #030808;
+      border:none;
+      border-radius: 20px;
+      background-color: #165654;
+      text-align:center;
+      padding-bottom: 80px;
+      width:40%;
+      letter-spacing: 2px;
+      font-weight: lighter;
+      font-size: 65px;
+      font-family: Helvetica;
+      color:#17DCD5;
+    }
+    #loginfonts{
+        font-family: sans-serif;
+        font-size: 25px;
+        font-weight: normal;
+        color: #165654;
+        
+    }
+    #makemecenter{
+
+        border:none;
+    }
+
+    input[placeholder],[placeholder],*[placeholder]
+    {
+        color:#E0F7FA !important;
+    }
+
+    input{
+
+            border: none;
+            font-size: 25px;
+            border-bottom: solid;
+            border-width: 1px;
+            border-color: #E0F2F1; 
+            background-color: transparent;
+            padding :2px 2px 0px 3px;
+            color:#165654;
+        text-shadow: 0px 0px 2px #030808;
+            text-align: left;
+    }
+    input:focus{
+        border: transparent;
+        border-bottom-color: darkcyan;
+        outline:none;
+        color:#165654;
+        text-decoration-color: #165654;
+        border-bottom: solid;
+        border-bottom-width: thin;
+        border-color: #E0F2F1; 
+        text-shadow: 0px 0px 2px #030808;
+    }
+
+
+    button{
+        border:none;
+        font-size: 20px;
+        font-family: sans-serif;
+        background-color: transparent;
+        margin:8px 0;
+        padding:14px 50px;
+        color: #A7FFEB;
+        text-shadow: 0px 0px 2px #030808;
+        -webkit-transition: box-shadow 0.6s;
+    }
+    button:hover{
+        -webkit-transition: box-shadow 0.2s;
+        background-color: #165654;
+        color: #17DCD5;
+        text-shadow: 0px 0px 2px #030808;
+        box-shadow: 4px 4px 10px #071212; 
+        outline:none;
+    }
+    button:active{
+        background-color:#A7FFEB; 
+      /*  -webkit-transition: box-shadow 0.2s;*/
+        color:#165654;
+        box-shadow: none;
+        outline:none;
+        text-shadow: 0px 0px 2px #030808;
+    }
+    button:focus{
+       /* box-shadow: none;*/
+        outline:none;
+        text-shadow: 0px 0px 2px #030808;
+    }
+
+
+/*          Welcome page css        */
+
+
+ body.welcome{
+        background-color: #165654;
+        font-family: Helvetica;
+     /*padding: -10px -10px -10px -10px;*/
+    }
+    h2.bluetitle{
+        text-rendering: optimizeLegibility;
+        border: none;
+        padding-left: 15px;
+        padding-bottom: 0px;
+        font-family: Helvetica;
+        font-size: 30px;
+        font-weight: bold;
+       /* background-color: #165654;*/
+        color:#17DCD5;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing:antialiased;
+    }
+div.restbody{
+   
+    background-color: #A7FFEB;
+    background-size: cover;
+    padding-left: 0;
+    border :none;
+    height: 600px;
+    width: 100%;
 }
