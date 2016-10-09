@@ -107,10 +107,10 @@ body.loginpage{
         padding:14px 50px;
         color: #A7FFEB;
         text-shadow: 0px 0px 2px #030808;
-        -webkit-transition: box-shadow 0.5s;
+        -webkit-transition: box-shadow 0.2s ease-in-out;
     }
     button:hover{
-        -webkit-transition: box-shadow 0.5s;
+        -webkit-transition: box-shadow 0.2s ease-in-out;
         background-color: #165654;
         color: #17DCD5;
         text-shadow: 0px 0px 2px #030808;
@@ -135,39 +135,101 @@ body.loginpage{
 /*          Welcome page css        */
 
 
- body.welcome{
-      background-color: #A7FFEB;
+body.welcome{
+     background-color: #7DBFB0;
         font-family: Helvetica;
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 0px;
         margin-bottom: 0px;
+        background-blend-mode: darken;
      /*padding: -10px -10px -10px -10px;*/
     }
-    h2.bluetitle{
+
+    h2.TitletoDaLeft{
+        position: relative;
         text-rendering: optimizeLegibility;
         border: none;
         font-family: Helvetica;
         font-size: 30px;
+        font-stretch: expanded;
         font-weight: bold;
-        padding-top: 1px;
+        padding-top: 0px;
         padding-left: 0.5%;
         letter-spacing: 3px;
         font-weight: lighter;
+        opacity:0.7;
         text-shadow: 0px 0px 2px #030808;
        /* background-color: #165654;*/
         color:#17DCD5;
         text-rendering: optimizeLegibility;
       /* -webkit-font-smoothing:antialiased;*/
     }
+
 div.titlebar{
+    height: 80px;
+    opacity: 0.9;
     margin-left: 0px;
     margin-bottom: 0px;
     margin-right: 0px;
     margin-top: 0px;
-    padding-left: 10px;
-    padding-top: 1px;
-    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color:  #165654;
+}
+.sidenav{
+    margin-top: 100px;
+    position:fixed;
+    height:100%;
+    opacity: 0.9;
+    background-color:  #061919;
+    height:100%;
+    width:0px;      /*175px;*/
+    z-index:1;
+    top:0;
+    left:0;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+.sidenav a{
+    text-align: center;
+    padding:8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #228886;
+    display: block;
+    transition: 0.5s;
+    
+}
+#userName{
+    position:relative;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 20px;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 10px;
+    color:#228886;
+    opacity:0.95;
+    text-shadow: 0px 0px 1px #030808;
+    text-rendering: optimizeLegibility;
+    /*-webkit-font-smoothing:antialiased;*/
+    
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color:#32C8C5;
+}
+.sidenav .closebtn{
+    text-align: right;
+    position:absolute;
+    top: 0;
+    right:5px;
+    font-size: 29px;
+}
+@media screen and (max-height:450px){
+    .sidenav{padding-top:15px;}
+    .sidenav a{ font-size:18px;}
 }
 
