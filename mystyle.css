@@ -1,10 +1,12 @@
-
+html,body{
+    height:100%;
+    overflow:hidden;
+}
 
 /*       login page css      */
 body.loginpage{
       background-color: #133433;
-      
-     font-family: Helvetica;
+     font-family:monospace ;
      
     }
    
@@ -98,34 +100,35 @@ body.loginpage{
     }
 
 
-    button{
+    button.loginbut{
         border:none;
         font-size: 20px;
         font-family: sans-serif;
-        background-color: transparent;
+        background-color:#165654; /*transparent;*/
         margin:8px 0;
         padding:14px 50px;
         color: #A7FFEB;
-        text-shadow: 0px 0px 2px #030808;
-        -webkit-transition: box-shadow 0.2s ease-in-out;
-    }
-    button:hover{
-        -webkit-transition: box-shadow 0.2s ease-in-out;
-        background-color: #165654;
-        color: #17DCD5;
-        text-shadow: 0px 0px 2px #030808;
+        text-shadow: 0px 0px 1px #030808;
         box-shadow: 4px 4px 10px #071212; 
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+    button.loginbut:hover{
+        -webkit-transition:all 0.3s ease-in-out;
+        background-color:#7DBFB0; /*#A7FFEB;/*#165654;*/
+        color: #030808;/*#17DCD5;*/
+        text-shadow: 0px 0px 2px #030808;
+        box-shadow: 0px 2px 10px 5px #E0F2F1; 
         outline:none;
     }
-    button:active{
-        background-color:#A7FFEB; 
-      /*  -webkit-transition: box-shadow 0.2s;*/
+    button.loginbut:active{
+        background-color:#A7FFEB;
+        -webkit-transition: all 0.3s ease-in-out;
         color:#165654;
         box-shadow: none;
         outline:none;
         text-shadow: 0px 0px 2px #030808;
     }
-    button:focus{
+    button.loginbut:focus{
        /* box-shadow: none;*/
         outline:none;
         text-shadow: 0px 0px 2px #030808;
@@ -135,29 +138,28 @@ body.loginpage{
 /*          Welcome page css        */
 
 
-body.welcome{
-     background-color: #7DBFB0;
+body.welcome{position:fixed;
+        width: 100%;
+        background-color: #7DBFB0;
         font-family: Helvetica;
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 0px;
         margin-bottom: 0px;
+        
         background-blend-mode: darken;
      /*padding: -10px -10px -10px -10px;*/
     }
 
     h2.TitletoDaLeft{
-        position: relative;
-        text-rendering: optimizeLegibility;
         border: none;
         font-family: Helvetica;
-        font-size: 30px;
+        font-size: 35px;
         font-stretch: expanded;
         font-weight: bold;
-        padding-top: 0px;
         padding-left: 0.5%;
         letter-spacing: 3px;
-        font-weight: lighter;
+        padding-top: 0px;
         opacity:0.7;
         text-shadow: 0px 0px 2px #030808;
        /* background-color: #165654;*/
@@ -167,6 +169,7 @@ body.welcome{
     }
 
 div.titlebar{
+    
     height: 80px;
     opacity: 0.9;
     margin-left: 0px;
@@ -174,22 +177,24 @@ div.titlebar{
     margin-right: 0px;
     margin-top: 0px;
     padding-left: 15px;
-    padding-right: 10px;
+    padding-right: 0px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     background-color:  #165654;
 }
+    /*      navigation sidebar  */
 .sidenav{
-    margin-top: 100px;
+    margin-top: 105px;
     position:fixed;
     height:100%;
-    opacity: 0.9;
+    
     background-color:  #061919;
     height:100%;
-    width:0px;      /*175px;*/
+    width:200px;      /*175px;*/
     z-index:1;
     top:0;
     left:0;
+    
     overflow-x: hidden;
     transition: 0.3s;
 }
@@ -221,7 +226,7 @@ div.titlebar{
 .sidenav a:hover, .offcanvas a:focus{
     color:#32C8C5;
 }
-
+    /*  for animataion of open and close      */
 .sidenav .closebtn{
     text-align: right;
     position:absolute;
@@ -233,36 +238,74 @@ div.titlebar{
     .sidenav{padding-top:15px;}
     .sidenav a{ font-size:18px;}
 }
-button.openbut{
+.openbut{
     border:none;
         font-size: 20px;
         font-family: sans-serif;
-        background-color:#228886 ;
-        opacity:0.5;
-        margin:8px 0;
-        padding:14px 50px;
-        color: #030808;
-        text-shadow: 0px 0px 1px black;
-        -webkit-transition: box-shadow 0.2s ease-in-out;
+        background-color: #061919;
+        opacity:0.9;
+        outline:none;
+         -webkit-transition: all 0.25s ease-in-out;
 }
  .openbut:hover{
-        -webkit-transition: box-shadow 0.2s ease-in-out;
-        background-color: #165654;
-        color: #17DCD5;
-        text-shadow: 0px 0px 2px #030808;
-        box-shadow: 4px 4px 10px #071212; 
+        -webkit-transition: all 0.25s ease-in-out;
+        opacity:0.6;
         outline:none;
     }
     .openbut:active{
-        background-color:#A7FFEB; 
-      /*  -webkit-transition: box-shadow 0.2s;*/
-        color:#165654;
-        box-shadow: none;
+        -webkit-transition: all 0.25s ease-in-out;
         outline:none;
-        text-shadow: 0px 0px 2px #030808;
     }
     .openbut:focus{
-       /* box-shadow: none;*/
-        outline:none;
-        text-shadow: 0px 0px 2px #030808;
-    }
+       }
+div.menuicon{
+    width:25px;
+    height:3px;
+    background-color: #030808;
+    margin:6px 0;
+}
+
+div.mainframe{
+    height:100%;
+    margin-bottom: 0px;
+    width:inherit;
+    background: transparent;
+}
+iframe{
+    border:none;
+    
+    height:inherit;
+    width:100%;
+}
+.logoutl{
+    border :2px solid white;
+    border-radius: 50%;
+    border-left:2px solid white;
+    border-right:2px solid white;
+   
+    border-top: none;
+     border-bottom: 2px solid white;
+    width:20px;
+    height:20px;
+}
+
+    
+/*      motivational quote or home page     */
+
+body.homie{
+    background: transparent;
+    border:none;
+}
+h1.quoteunquote {
+    border:transparent;
+    padding-top:50px;
+    background: transparent;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    color: #165654;
+    text-align:center;
+    text-rendering: optimizeLegibility;
+    text-shadow:rgba(0,0,0,.01), 0 0 1px;
+}
+    
