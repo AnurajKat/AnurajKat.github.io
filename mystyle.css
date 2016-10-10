@@ -299,6 +299,7 @@ body.homie{
 h1.quoteunquote {
     border:transparent;
     padding-top:50px;
+    padding-left: 10px;
     background: transparent;
     font-size: 30px;
     font-family: monospace;
