@@ -1,6 +1,7 @@
-html,body{
-    height:100%;
-    overflow:hidden;
+html{
+    width:100%;
+    height:90%;
+    overflow:auto;
 }
 
 /*       login page css      */
@@ -139,8 +140,10 @@ body.loginpage{
 
 
 body.welcome{position:fixed;
+        margin-top: 80px;
         width: 100%;
         background-color: #7DBFB0;
+    
         font-family: Helvetica;
         margin-left: 0px;
         margin-right: 0px;
@@ -150,8 +153,10 @@ body.welcome{position:fixed;
         background-blend-mode: darken;
      /*padding: -10px -10px -10px -10px;*/
     }
+/*      title bar   */
 
     h2.TitletoDaLeft{
+        position:fixed;
         border: none;
         font-family: Helvetica;
         font-size: 35px;
@@ -169,8 +174,9 @@ body.welcome{position:fixed;
     }
 
 div.titlebar{
-    
+    position:fixed;
     height: 80px;
+    width:99%;
     opacity: 0.9;
     margin-left: 0px;
     margin-bottom: 0px;
@@ -226,7 +232,7 @@ div.titlebar{
 .sidenav a:hover, .offcanvas a:focus{
     color:#32C8C5;
 }
-    /*  for animataion of open and close      */
+    /*  for animataion of open and close    removed  */
 .sidenav .closebtn{
     text-align: right;
     position:absolute;
@@ -265,20 +271,27 @@ div.menuicon{
     margin:6px 0;
 }
 
+/*  displaying other pages  */
 div.mainframe{
-    position:relative;
+    
+    position:fixed;
+    margin-top: 105px;
     margin-left: 10px;
-    height:100%;
+    height:84.4%;
     margin-bottom: 0px;
-    width:inherit;
+    width:99.25%;
     background: transparent;
 }
 iframe{
+    margin-left:200px;
     border:none;
-    
-    height:inherit;
-    width:100%;
+    overflow: scroll;
+    height: inherit;
+    /*height:100%;*/
+    position:inherit;
+    width:99.25%;
 }
+/*  logout  */
 .logoutl{
     border :2px solid white;
     border-radius: 50%;
@@ -314,38 +327,41 @@ h1.quoteunquote {
 /*        Academics              */  
 
 body.cantEven{
-   /* position: relative;*/
-    margin-left: 210px;
-    margin-top: 20px;
-    width:100%;
+    position: inherit;
+    margin-left: 5px;
+    margin-top: 10px;
+    width:99.25%;
     height:100%;
     background:transparent;
     border:none;
 }
 
+/*  cards   */
 button.bttncard{
     border:none;
-    background: transparent;
-    
+    background: transparent;   
 }
 .text_card{
     font-size: 15px;
     font-family: monospace;
 }
 .text_heading_card{
-    font-size: 20px;
+    font-size: 20px;    
     font-family: monospace;
 }
 .cards{
     position: sticky;
-    margin-left: 10px;
+    margin-left: 25px;
+    margin-right:20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     /*margin-top:15px;*/
     border:none;
     text-align: center;
-    width:250px;
-    height:200px;
+    width:500px;
+    height:225px;
     outline:none;
-    padding: 5px 5px 5px 5px;
+    /*padding: 5px 5px 5px 5px;*/
     box-shadow: 3px 3px 8px #030808;
     background-color: #228886;/*aquamarine;*/
     color:#030808;/* #17DCD5; /* #165654;*/
@@ -356,9 +372,6 @@ button.bttncard{
     padding-top: 15px;
 }
 .cards:hover{
-    /*color: #061919;
-    color:currentColor;
-    background-color: aquamarine;*/
     box-shadow: 3px 3px 15px #030808;
     outline:none;
     -webkit-transition: all 0.2s ease-in-out;
