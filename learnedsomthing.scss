@@ -1,0 +1,25 @@
+$picture_names_png: algo, antijob, cyberpolice, independence, kodeKarlie, potatoLinux, softwareStartup, vbExcel, whatFam, whatProg, whenDebug ;
+
+$picture_names_jpg: codereview, error404,pythonLand,youvsguy;
+$actual_png: "algo.png","anti_job.png","cyber_police.png", "independence.png", "Kode_with_karlie.png", "potato_linux.png", "software_startup.png", "vb_excel.png", "what_fam_think.png", "what_programmers_say.png";
+$actual_jpg: "code_review.jpg","error404_poem.jpg","python_lives_on_land.jpg","you_vs_the_guy.jpg";
+
+@for $j from 1 through 10 {
+	.#{nth($picture_names_png , $j)} {
+        $path_picture: pics/#{nth($actual_png, $j)};
+        box-sizing: content-box;
+        background-image: url(pics/#{nth($actual_png, $j)});
+        margin: 5px 5px 5px 5px;
+        padding: 2px 2px 2px 2px;
+        min-height: 50px;
+        min-width: 100px;
+        height: image-height(pics/#{nth($actual_png, $j)});
+        width: image-width(pics/#{nth($actual_png, $j)});
+        max-height: auto;
+        max-width: auto;
+        background-color: $color-set3-light;
+        flex: 1 1 auto;
+        
+        background-repeat: no-repeat;
+    }
+}

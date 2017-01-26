@@ -1,0 +1,100 @@
+$color-set3-dark: #001f1d;
+$color-set3-less-dark: #00645d;
+$color-set3-bg: #00958A;
+$color-set3-light: #20b8ad;
+$color-set3-very-light: #72d9d1;
+
+$color-set2-bg:#b4e800;
+$color-set2-dark: #263100;
+$color-set2-whitelight: #e0f884;
+$color-set2-light: #788c00;
+$color-set2-less-dark: #799c00;
+
+@import "https://fonts.googleapis.com/css?family=Source+Code+Pro";
+@import "https://fonts.googleapis.com/css?family=Press+Start+2P";
+
+//@import "compass/helpers";
+
+$font-stack1: 'Source Code Pro', monospace;
+$font-stack2: 'Press Start 2P',cursive;
+
+$easing : cubic-bezier(0.39, 1.52, .46, .92);
+$easing2: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$transition: 0.2s;
+$transition2: 0.35s;
+$colorme: grey;
+
+html{
+    margin:0 0 0 0 ;
+    overflow-y: auto;
+}
+
+body {
+    margin:0 0 0 0;
+    background-color: $color-set2-bg;
+    font-family: $font-stack1;
+    align-content: center;
+    text-align: center;
+}
+#wrapper {
+	margin-top:150px;
+	align-content:center;
+	min-width:78%;
+	border-radius:20px;
+	min-height:80%;
+	height:auto;
+	width:auto;
+	display:inline-flex;
+	padding: 10px 10px 10px 10px;
+	background-color: $color-set3-less-dark;
+}
+.container {
+	position:relative;
+	background-color:$color-set3-dark;
+	margin:5px 5px 5px 5px;	
+	border-radius:3px;
+	height:auto;
+	max-height:180px;
+	width:auto;
+	overflow:hidden;
+	}
+
+img{
+	width:180px;
+	height:180px;
+	z-index:0;
+}
+.overlay-img {
+	align-content:center;
+       	z-index:1;
+	position:absolute;
+	opacity:0.0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:$color-set3-dark;
+	width:inherit;
+	height:100%;
+	overflow:hidden;
+	transition:  all $transition ease-in-out;
+}
+.caption {
+	text-align: center;
+	position:absolute;
+	opacity: 0;
+	z-index:2;
+	top:30px;
+	left:15px;
+	color:$color-set3-very-light;
+	transition: all $transition2 ;
+}
+.container:hover .overlay-img {
+	height:100%;
+	opacity:0.9;
+	transform: skew(-45deg);
+}
+.container:hover .caption {
+	opacity:1;
+}	
+
+

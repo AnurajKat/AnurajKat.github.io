@@ -1,0 +1,135 @@
+$color-set3-dark: #001f1d;
+$color-set3-less-dark: #00645d;
+$color-set3-bg: #00958A;
+$color-set3-light: #20b8ad;
+$color-set3-very-light: #72d9d1;
+
+$color-set2-bg:#b4e800;
+$color-set2-dark: #263100;
+$color-set2-whitelight: #e0f884;
+$color-set2-light: #788c00;
+$color-set2-less-dark: #799c00;
+
+@import "https://fonts.googleapis.com/css?family=Source+Code+Pro";
+@import "https://fonts.googleapis.com/css?family=Press+Start+2P";
+
+$font-stack1: 'Source Code Pro', monospace;
+$font-stack2: 'Press Start 2P',cursive;
+
+$easing : cubic-bezier(0.39, 1.52, .46, .92);
+$easing2: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$transition: 0.25s;
+$transition2: 0.35s;
+$colorme: grey;
+
+html{
+    margin:0 0 0 0 ;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body {
+    margin:0 0 0 0;
+    background-color: $color-set2-bg;
+    font-family: $font-stack1;
+    align-content: center;
+    text-align: center;
+}
+.headbar{
+    background-color: $color-set3-dark;
+    align-content: center;
+    height:3em;
+}
+
+h1.page-header1 {
+    margin:0 0 0 0;
+    padding-top: 2px;
+    color:$color-set3-light;
+    background: none;
+    height:auto;
+    width:auto;
+}
+ul{
+    list-style: none;
+    margin:0 0 0 0;
+    padding: 0 0 0 0;
+}
+li{
+    display: inline-block;
+    
+}
+#wrapper {
+    vertical-align: baseline;
+	margin-top:100px;
+	align-content:flex-start;
+	min-width:auto;
+	border-radius:20px;
+	min-height:12em;
+	height:auto;
+	width:auto;
+    max-width: 80%;
+	display:inline-flex;
+	padding: 10px 10px 10px 10px;
+	background-color: $color-set3-less-dark;
+    flex-direction: row;
+    flex-flow: row;
+}
+.container {
+	position:relative;
+    align-items:center;
+    text-align: center;
+	background-color:$color-set3-dark;
+	margin:5px 5px 5px 5px;	
+	border-radius:3px;
+	height:auto;
+	max-height:180px;
+	width:auto;
+	overflow:hidden;
+	}
+
+img{
+	width:180px;
+	height:180px;
+	z-index:0;
+}
+.overlay-img {
+	align-content:center;
+       	z-index:1;
+	position:absolute;
+	opacity:0.0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:$color-set3-dark;
+	width:inherit;
+	height:100%;
+	overflow:hidden;
+    transform: skew(-45deg) scaleX(0);
+	transition:  all $transition $easing2;
+}
+.caption {
+    font-family: $font-stack1;
+    margin:0 0 0 0;
+	text-align: center;
+	position:absolute;
+    top:36.39%;
+    left:29.5%;
+	opacity: 0;
+    justify-content: center;
+	z-index:2;
+    width:auto;
+    height:auto;
+    max-width: 70px;
+	color:$color-set3-very-light;
+	transition: all $transition2 ;
+}
+.container:hover .overlay-img {
+	height:100%;
+	opacity:0.95;
+	transform: skew(-45deg) scaleX(1);
+}
+.container:hover .caption {
+	opacity:1;
+}	
+
+
