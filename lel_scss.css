@@ -1,69 +1,58 @@
 @import "https://fonts.googleapis.com/css?family=Source+Code+Pro";
 @import "https://fonts.googleapis.com/css?family=Press+Start+2P";
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/a2z\/Downloads\/FWT\/lel_scss\.scss}line{font-family:\0000325}}
 html {
   margin: 0 0 0 0;
   overflow-y: auto;
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/a2z\/Downloads\/FWT\/lel_scss\.scss}line{font-family:\0000331}}
 body {
   margin: 0 0 0 0;
   background-color: #b4e800;
   font-family: "Source Code Pro", monospace;
   align-content: center;
-  text-align: center;
-}
+  text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/a2z\/Downloads\/FWT\/lel_scss\.scss}line{font-family:\0000338}}
 .headbar {
   background-color: #001f1d;
   align-content: center;
-  height: 3em;
-}
+  height: 3em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/a2z\/Downloads\/FWT\/lel_scss\.scss}line{font-family:\0000344}}
 h1.page-header1 {
   margin: 0 0 0 0;
-  padding-top: 2px;
-  color: #20b8ad;
+  margin-top: 25px;
+  padding-top: 0px;
+  font-size: 50px;
+  color: #263100;
   background: none;
   height: auto;
-  width: auto;
-}
+  width: auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/a2z\/Downloads\/FWT\/lel_scss\.scss}line{font-family:\0000352}}
 ul {
   list-style: none;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-}
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  border: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/a2z\/Downloads\/FWT\/lel_scss\.scss}line{font-family:\0000357}}
 li {
-  display: inline-block;
-}
+  display: inline-block; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/a2z\/Downloads\/FWT\/lel_scss\.scss}line{font-family:\0000361}}
 #wrapper {
   vertical-align: baseline;
-  margin-top: 100px;
+  margin-top: 50px;
   align-content: flex-start;
   min-width: auto;
   border-radius: 20px;
   min-height: 12em;
   height: auto;
   width: auto;
+  border: none;
   max-width: 80%;
   display: inline-flex;
-  padding: 10px 10px 10px 10px;
+  padding: 15px 5px 15px 5px;
   background-color: #00645d;
   flex-direction: row;
-  flex-flow: row;
-}
+  flex-flow: row; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/a2z\/Downloads\/FWT\/lel_scss\.scss}line{font-family:\0000377}}
 .container {
   position: relative;
   align-items: center;
@@ -74,17 +63,13 @@ li {
   height: auto;
   max-height: 180px;
   width: auto;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/a2z\/Downloads\/FWT\/lel_scss\.scss}line{font-family:\0000390}}
 img {
   width: 180px;
   height: 180px;
-  z-index: 0;
-}
+  z-index: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/a2z\/Downloads\/FWT\/lel_scss\.scss}line{font-family:\0000395}}
 .overlay-img {
   align-content: center;
   z-index: 1;
@@ -98,10 +83,8 @@ img {
   height: 100%;
   overflow: hidden;
   transform: skew(-45deg) scaleX(0);
-  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/a2z\/Downloads\/FWT\/lel_scss\.scss}line{font-family:\00003110}}
 .caption {
   font-family: "Source Code Pro", monospace;
   margin: 0 0 0 0;
@@ -116,19 +99,147 @@ img {
   height: auto;
   max-width: 70px;
   color: #72d9d1;
-  transition: all 0.35s;
-}
+  transition: all 0.35s; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/a2z\/Downloads\/FWT\/lel_scss\.scss}line{font-family:\00003126}}
 .container:hover .overlay-img {
   height: 100%;
   opacity: 0.95;
-  transform: skew(-45deg) scaleX(1);
-}
+  transform: skew(-45deg) scaleX(1); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/a2z\/Downloads\/FWT\/lel_scss\.scss}line{font-family:\00003131}}
 .container:hover .caption {
-  opacity: 1;
-}
+  opacity: 1; }
+
+.mainmenu {
+  position: absolute;
+  margin: none;
+  padding: none;
+  width: 6em;
+  height: 6em;
+  z-index: 6;
+  cursor: pointer; }
+
+#menu {
+  position: absolute;
+  background: none;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  height: inherit;
+  width: inherit;
+  border: none;
+  opacity: 6;
+  font-size: 1em;
+  font-family: "Press Start 2P", cursive;
+  color: #72d9d1;
+  text-align: center;
+  z-index: 6;
+  overflow: hidden; }
+
+.main {
+  position: absolute;
+  height: 5em;
+  width: 5em;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  mix-blend-mode: multiply;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  font-family: "Press Start 2P", cursive;
+  color: #331900;
+  z-index: 5;
+  background: none;
+  align-content: center;
+  text-align: center;
+  background-color: #001f1d;
+  opacity: 2;
+  overflow: hidden; }
+  .main a.ros {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    left: 0%;
+    top: 42.75%;
+    position: absolute;
+    color: burlywood;
+    width: inherit;
+    height: inherit;
+    text-decoration: none;
+    background: none;
+    font-size: 0.5em;
+    opacity: 6; }
+
+.m1 {
+  left: 5.25em;
+  transition: all 0.25s cubic-bezier(0.39, 1.52, 0.46, 0.92); }
+  .closed .m1 {
+    left: 0em; }
+
+.m2 {
+  left: 10.5em;
+  transition: all 0.25s cubic-bezier(0.39, 1.52, 0.46, 0.92); }
+  .closed .m2 {
+    left: 0em; }
+
+.m3 {
+  left: 15.75em;
+  transition: all 0.25s cubic-bezier(0.39, 1.52, 0.46, 0.92); }
+  .closed .m3 {
+    left: 0em; }
+
+.m4 {
+  left: 21em;
+  transition: all 0.25s cubic-bezier(0.39, 1.52, 0.46, 0.92); }
+  .closed .m4 {
+    left: 0em; }
+
+.m5 {
+  left: 26.25em;
+  transition: all 0.25s cubic-bezier(0.39, 1.52, 0.46, 0.92); }
+  .closed .m5 {
+    left: 0em; }
+
+.mainb {
+  color: aliceblue;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  z-index: 733433;
+  transition: all 0.1s cubic-bezier(0.39, 1.52, 0.46, 0.92);
+  opacity: 1; }
+  .mainb p {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    left: 0%;
+    top: 42.75%;
+    position: absolute;
+    color: burlywood;
+    width: inherit;
+    height: inherit;
+    text-decoration: none;
+    background: none;
+    font-size: 0.5em;
+    opacity: 1; }
+  .mainb.closed {
+    content: "+";
+    transform: translate3d(0, 0, 0) !important; }
+
+#heading {
+  font-family: "Source Code Pro", monospace;
+  color: #00645d;
+  border: none;
+  background: none;
+  size: 3em; }
+
+#container-image {
+  position: absolute;
+  padding: 10px 10px 10px 10px;
+  background-color: #00958A; }
+
+.pic-page-image {
+  min-width: 300px;
+  min-height: 300px;
+  width: auto;
+  height: auto;
+  border: none;
+  outline: none;
+  overflow: visible; }
 
 /*# sourceMappingURL=lel_scss.css.map */

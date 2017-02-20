@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>picture</title>
+    <link rel="stylesheet" type="text/css" href="lel_scss.css">
+    <scrtpt src="js/jquery-3.1.1.js"></scrtpt>
+    <script src="js/main.js"></script>
+    <script>
+        var somethin = function () {
+    
+    window.console.log('somergf');
+    var query = window.location.search.substring(1);
+    window.console.log(query);
+    window.alert(query);
+    var vars = query.split('&');
+    var pair = vars[0].split('=');
+    var pair2 = vars[1].split('=');
+    if(pair[0] === 'location') {
+         window.console.log(vars);
+        var image = document.createElement("img");
+        var imageParent = document.getElementById('container-image');
+        image.className = "dsdf";
+        document.innerHTML= pair[1];
+        image.src = "pics\\" + pair[1] + '.png';
+        imageParent.appendChild(image);
+         document.getElementById("heading").innerHTML=pair2[1];
+    }
+};
+
+   </script>
+</head>
+<body>
+    <div id="container-image" >
+        <p id="heading"></p>
+        
+    </div>
