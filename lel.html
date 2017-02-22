@@ -4,18 +4,20 @@
 	<title>Programmer Humour</title>
     <link rel="stylesheet" type="text/css" href="lel_scss.css"/>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script type= "text/javascript" src="js/jquery-ui/jquery-ui.js"></script>
+    
     <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+    <script type= "text/javascript" src="js/jquery-ui/jquery-ui.js"></script>
     <script type="text/javascript" src="js/anime.js"></script>
     <script type= "text/javascript" src="js/main.js"></script>
+    <script>
+        $("#chess").draggable();
+    </script>
 </head>
 <body>
         <h1 class="page-header1">Programmer Humour</h1>
-    <div class="mainmenu">
+    <div id="chess" class="mainmenu">
         <div id="fn" class="menu closed">
-            <div   class="main mainb" onclick="moggle()">
-                <p id="btnmenu">Menu</p>
-            </div>
+            
             <div class="main m1" >
                 <a class="ros" href="lel.html" >Home</a>
             </div>
@@ -31,8 +33,11 @@
             <div class="main m5" >
                 <a class="ros" href="contribute.html">Post</a>
             </div>
-            
+            <div  id="btnc" class="main mainb" >
+                <p id="btnmenu"onclick="moggle()">Menu</p>
         </div>
+         </div>
+        
     </div>
 
 <div id="wrapper">

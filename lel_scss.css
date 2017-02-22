@@ -110,6 +110,7 @@ img {
   opacity: 1; }
 
 .mainmenu {
+  left: 3em;
   position: absolute;
   margin: none;
   padding: none;
@@ -123,6 +124,7 @@ img {
   background: none;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
+  left: 7.5%;
   height: inherit;
   width: inherit;
   border: none;
@@ -151,71 +153,78 @@ img {
   align-content: center;
   text-align: center;
   background-color: #001f1d;
-  opacity: 2;
+  opacity: 1;
   overflow: hidden; }
   .main a.ros {
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
-    left: 0%;
+    left: 19%;
     top: 42.75%;
     position: absolute;
     color: burlywood;
-    width: inherit;
-    height: inherit;
+    width: auto;
+    height: auto;
     text-decoration: none;
     background: none;
     font-size: 0.5em;
-    opacity: 6; }
+    opacity: 1; }
 
 .m1 {
   left: 5.25em;
   transition: all 0.25s cubic-bezier(0.39, 1.52, 0.46, 0.92); }
   .closed .m1 {
-    left: 0em; }
+    left: 0em;
+    opacity: 0.05; }
 
 .m2 {
   left: 10.5em;
   transition: all 0.25s cubic-bezier(0.39, 1.52, 0.46, 0.92); }
   .closed .m2 {
-    left: 0em; }
+    left: 0em;
+    opacity: 0.05; }
 
 .m3 {
   left: 15.75em;
   transition: all 0.25s cubic-bezier(0.39, 1.52, 0.46, 0.92); }
   .closed .m3 {
-    left: 0em; }
+    left: 0em;
+    opacity: 0.05; }
 
 .m4 {
   left: 21em;
   transition: all 0.25s cubic-bezier(0.39, 1.52, 0.46, 0.92); }
   .closed .m4 {
-    left: 0em; }
+    left: 0em;
+    opacity: 0.05; }
 
 .m5 {
   left: 26.25em;
   transition: all 0.25s cubic-bezier(0.39, 1.52, 0.46, 0.92); }
   .closed .m5 {
-    left: 0em; }
+    left: 0em;
+    opacity: 0.05; }
 
 .mainb {
   color: aliceblue;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
-  z-index: 733433;
+  z-index: 7;
   transition: all 0.1s cubic-bezier(0.39, 1.52, 0.46, 0.92);
-  opacity: 1; }
+  opacity: 1;
+  align-content: center; }
   .mainb p {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-    left: 0%;
-    top: 42.75%;
+    left: 19%;
+    top: 40.75%;
+    z-index: 7;
     position: absolute;
-    color: burlywood;
-    width: inherit;
-    height: inherit;
+    color: aquamarine;
+    width: auto;
+    height: auto;
     text-decoration: none;
     background: none;
-    font-size: 0.5em;
+    font-size: 0.6em;
     opacity: 1; }
   .mainb.closed {
     content: "+";

@@ -163,6 +163,7 @@ img{
 $position-left : 5.25;
 
 .mainmenu {
+    left:3em;
     position:absolute;
     margin: none;
     padding: none;
@@ -178,7 +179,7 @@ $position-left : 5.25;
     background: none;
     padding: 0px 0px 0px 0px;
     margin : 0px 0px 0px 0px;
-    //left:7.5%;
+    left:7.5%;
     height:inherit;
     width:inherit;
     border:none;
@@ -209,24 +210,24 @@ $position-left : 5.25;
     align-content: center;
     text-align: center;
     background-color: $color-set3-dark;
-    opacity:2;  
+    opacity:1;  
     overflow:hidden;
     
     a.ros{
         //content:attr(data-foo);
         padding:0px 0px 0px 0px;
         margin:0px 0px 0px 0px;
-        left:0%;
+        left:19%;
         top:42.75%;
         position: absolute;
         color:burlywood;
-        width: inherit;
-        height: inherit;
+        width: auto;
+        height: auto;
         
         text-decoration: none;
         background: none;
         font-size: 0.5em; 
-        opacity:6; 
+        opacity:1; 
        
      }
      //transition: translate 0.2s ease-in-out;
@@ -239,6 +240,8 @@ $position-left : 5.25;
         transition: all 0.25s $easing;
         .closed & {
             left: 0em;
+            opacity:0.05;
+            
         }
     }
 }
@@ -247,26 +250,29 @@ $position-left : 5.25;
     color:aliceblue;
     margin: 0px 0px 0px 0px;
     padding:0px 0px 0px 0px;
-    z-index:733433;
+    z-index:7;
     transition: all 0.1s $easing;
     opacity:1;
+    align-content: center;
     p{
-       margin: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
         padding:0px 0px 0px 0px;
-        left:0%;
-        top:42.75%;
+        left:19%;
+        top:40.75%;
+        z-index:7;
         position: absolute;
-        color:burlywood;
-        width: inherit;
-        height: inherit;
+        color:aquamarine;
+        width: auto;
+        height: auto;
         text-decoration: none;
         background: none;
-        font-size: 0.5em; 
+        font-size: 0.6em; 
         opacity:1; 
     }
      
     &.closed { content:"+";
-        transform: translate3d(0,0,0) !important; }
+        transform: translate3d(0,0,0) !important; 
+    }
     
 }
 
