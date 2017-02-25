@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Submission</title>
+    <link rel="stylesheet" type="text/css" href="lel_scss.css"/>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script type= "text/javascript" src="js/jquery-ui/jquery-ui.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
@@ -33,18 +34,40 @@ $("#validate").click( function (){
 });
     </script>
 </head>
-<body>
-<div  class="wrapper" style="height:100%;background-color:#FF7C00;color:#9B4C00;text-align:center">
-<h2>Submisssion</h2>
-<form>
-Text Joke: </br>
-<textarea rows="6" cols="55" name="main_content_joke">
-Enter joke||your_life_biography
-</textarea></br></br>
-    Em41L: <input id="email"></br>
-Im4g3: <input type="file" name="imgupload" accept="image/*"></br></br>
-Your_name: <input type="text" name="name"></br></br>
-your_H4X0R_id: <input type="text" name="alias_id"></br></br>
+<body class="contbody">
+    <div  class="contwrapper">
+        <h2 class="contheader">Submisssion</h2>
+        <form style="align-content:center;margin:auto;text-align:center;">
+        <ul class="formy">
+            <li>
+        <textarea rows="8" cols="65" name="main_content_joke">Enter joke||your_life_biography
+        </textarea>
+            </li>
+            <li>
+                <div class="submitdet">
+                    <p>email_id:</p>
+                    <input id="email"/>
+                </div>
+            </li>
+            <li>
+                <div class="submitdet"> 
+                    <p>Image:</p>
+                    <input type="file" name="imgupload" accept="image/*"/>     
+                </div>
+            </li>
+            <li>
+                <div class="submitdet">
+                    <p>your_name:</p>
+                    <input type="text" name="name"/> 
+                </div>
+            </li>
+            <li>
+                <div class="submitdet">
+                    <p>alias:</p>
+                    <input type="text" name="alias_id"/> 
+                </div>
+            </li>
+        </ul>
 </form>
 <button id="validate" onclick="validate()">Submit</button>
  

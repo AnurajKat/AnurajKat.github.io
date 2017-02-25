@@ -45,35 +45,60 @@ $colorlist: #001f1d,  #263100, #331900,  #6C0057,#006D29;
 $idlist : "m1","m2","m3","m4","m5";
 
 html{
-    margin:0 0 0 0 ;
+    margin:0px 0px 0px 0px ;
+    height: 100%;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x:auto;
 }
 
 body {
-    margin:0 0 0 0;
+    margin:auto;
     background-color: $color-set2-bg;
     font-family: $font-stack1;
     align-content: center;
     text-align: center;
 }
 .headbar{
+    position:fixed;
+    margin:auto;
     background-color: $color-set3-dark;
     align-content: center;
-    height:3em;
+    min-height: 3rem;
+    height:3rem;
+    width:100%;
 }
 
 h1.page-header1 {
-    margin:0 0 0 0;
-    margin-top:25px;
+    position: fixed;
+    margin:auto;
     padding-top:0px;
-    font-size: 50px;
-    //color:$color-set3-light;
+    font-size: 3rem;
+    background-color:$color-set3-light;
     color:$color-set2-dark;
-    background: none;
-    height:auto;
-    width:auto;
+   // background: none;
+    height: auto;
+    width:100%;
+    z-index:6;
 }
+.framecont {
+	position: fixed;
+    margin-top:2.99em;
+    //margin:auto ;
+    height:100%;
+    width:100%;
+    background:transparent;
+}
+
+iframe {
+    margin:auto ;
+    padding:auto;
+    border:none;
+    overflow: visible;
+    width:100%;
+    height:inherit;
+    
+}
+
 ul{
     list-style: none;
     margin:0px 0px 0px 0px;
@@ -86,7 +111,7 @@ li{
 }
 #wrapper {
     vertical-align: baseline;
-	margin-top:50px;
+	margin:auto;
 	align-content:flex-start;
 	min-width:auto;
 	border-radius:20px;
@@ -136,7 +161,7 @@ img{
 }
 .caption {
     font-family: $font-stack1;
-    margin:0 0 0 0;
+    margin:auto;
 	text-align: center;
 	position:absolute;
     top:36.39%;
@@ -163,12 +188,13 @@ img{
 $position-left : 5.25;
 
 .mainmenu {
-    left:3em;
+    top:4rem;
+    left:3rem;
     position:absolute;
-    margin: none;
+    margin: auto;
     padding: none;
-    width:6em;
-    height:6em;
+    width:6rem;
+    height:6rem;
     //overflow: hidden;
     z-index: 6;
     cursor:pointer;
@@ -178,13 +204,13 @@ $position-left : 5.25;
     position:absolute;
     background: none;
     padding: 0px 0px 0px 0px;
-    margin : 0px 0px 0px 0px;
-    left:7.5%;
+    margin : auto;
+    left:9.5%;
     height:inherit;
     width:inherit;
     border:none;
     opacity:6 ;
-    font-size: 1em;
+    font-size: 1rem;
     font-family: $font-stack2;
     color: $color-set3-very-light;
     text-align: center;
@@ -195,10 +221,10 @@ $position-left : 5.25;
 }
 .main {
     position:absolute;
-    height:5em;
-    width:5em;
+    height:5rem;
+    width:5rem;
     padding:0px 0px 0px 0px;
-    margin:0px 0px 0px 0px;
+    margin:auto;
     mix-blend-mode: multiply;
     border-radius: 50%;
     border:none;
@@ -215,15 +241,15 @@ $position-left : 5.25;
     
     a.ros{
         //content:attr(data-foo);
-        padding:0px 0px 0px 0px;
-        margin:0px 0px 0px 0px;
-        left:19%;
-        top:42.75%;
-        position: absolute;
+         position: relative;
+        padding:auto;
+        margin:auto;
+        //left:-19%;
+        top:32%;
         color:burlywood;
-        width: auto;
+        width: 100%;
         height: auto;
-        
+        font:0.9rem;
         text-decoration: none;
         background: none;
         font-size: 0.5em; 
@@ -248,25 +274,25 @@ $position-left : 5.25;
 
 .mainb {
     color:aliceblue;
-    margin: 0px 0px 0px 0px;
+    margin: auto;
     padding:0px 0px 0px 0px;
     z-index:7;
     transition: all 0.1s $easing;
     opacity:1;
     align-content: center;
     p{
-        margin: 0px 0px 0px 0px;
+        position: relative;
+        margin: auto;
         padding:0px 0px 0px 0px;
-        left:19%;
+        //left:19%;
         top:40.75%;
         z-index:7;
-        position: absolute;
         color:aquamarine;
         width: auto;
         height: auto;
         text-decoration: none;
         background: none;
-        font-size: 0.6em; 
+        font-size: 0.6rem; 
         opacity:1; 
     }
      
@@ -276,7 +302,75 @@ $position-left : 5.25;
     
 }
 
+
+//modal
+.modal {
+    display:none;
+    position:fixed;
+    z-index:10;
+    padding-top:100px;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color: rgba(0,0,0,0.9);
+    overflow: auto;
+}
+.modal-content {
+    margin:auto;
+    display:block;
+    width:80%;
+    max-width:700px;
+    height:auto;
+}
+#captionme {
+    margin:auto;
+    display:auto;
+    width:80%;
+    max-width:700px;
+    text-align:center;
+    color: #ccc;
+    padding:10px 0;
+    height: 150px;
+}
+.modal-content, #captionme {
+    -webkit-animation-name:zoom;
+    -webkit-animation-duration:0.6s;
+    animation-name:zoom;
+    animation-duration:0.6s;
+}
+@-webkit-keyframes zoom{
+    from{-webkit-tranform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+.close {
+    position :absolute;
+    top:15px;
+    right:35px;
+    color:#f1f1f1;
+    font-size:40px;
+    font-weight:bold;
+    transition:0.3s;
+}
+.close:hover,
+.close:focus {
+    color:#bbb;
+    text-decoration:none;
+    cursor:pointer;
+}
+@media only screen and ( max-width:700px){
+    .modal-content {
+        width:100%;
+    }
+}
+
 //pic page css
+
 #heading {
     font-family: $font-stack1;
     color:$color-set3-less-dark;
@@ -299,3 +393,99 @@ $position-left : 5.25;
     outline: none;
     overflow: visible;
 }
+// Submit post page
+.contbody {
+    background-color: $color-set1-bg;
+    font-family: $font-stack1;
+    text-align: center;
+    margin:auto;
+    padding:0px 0px 0px 0px;
+}
+.contwrapper{
+     background :transparent;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    color:$color-set1-dark;
+    height:100%;
+    width:100%;
+    //display:flex;
+}
+h2.contheader {
+    padding-top:2em;
+    padding-bottom: 2em;
+    font-family: $font-stack2;
+    color:$color-set2-dark;
+    margin:auto;
+    font-stretch: ultra-expanded;
+    text-align: center;
+}
+textarea {
+    margin:auto;
+    background: $color-set1-light;
+    color:$color-set1-dark;
+    outline:none;
+    border:none;
+    box-shadow: 2px 2px 8px 1px $color-set1-dark ;
+}
+
+ul.formy{
+    list-style: armenian;
+    align-content: center;
+    text-align: center;
+    li {
+        display: flex;
+    }
+}
+
+.submitdet {
+    margin:auto;
+    //margin-left:35%;
+    padding:0.5rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    p{
+        margin:0em 0em 0em 0em;
+        padding:auto;
+        font-family: $font-stack2;
+        color:$color-set3-dark;
+        font-size:1rem;
+    }
+    
+    input {
+        margin:-4px 0px 8px 0px;
+        padding:0px 0px 0px 0px;
+        font-size:1rem;
+        font-family: $font-stack1;
+        height:inherit;
+        background:transparent;
+        border-color:$color-set3-dark;
+        border-bottom-width: 1px;
+        border-top:none;
+        border-left: none;
+        border-right:none;  
+        transition:all 0.2s $easing;
+        outline: none;
+    }
+    input:focus {
+        border-color:$color-set2-dark;
+    }
+}
+#validate {
+    padding:1rem 1.5rem 1rem 1.5rem;
+    font-family:$font-stack2;
+    outline: none;
+    border:none;
+    background-color: $color-set2-dark;
+    color:$color-set2-whitelight;
+    transition: all 0.15s ease-in-out; 
+}
+ #validate:hover {
+        background-color: $color-set2-bg;
+        color: $color-set2-less-dark;
+    }
+#validate:active {
+        background-color: $color-set2-whitelight;
+        color: $color-set2-dark;
+    }
