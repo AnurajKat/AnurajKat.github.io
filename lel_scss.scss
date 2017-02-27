@@ -4,7 +4,7 @@ $color-set3-bg: #00958A;
 $color-set3-light: #20b8ad;
 $color-set3-very-light: #72d9d1;
 
-$color-set2-bg:#b4e800;
+$color-set2-bg:#B4E800;
 $color-set2-dark: #263100;
 $color-set2-whitelight: #e0f884;
 $color-set2-light: #788c00;
@@ -507,13 +507,14 @@ ul.formy{
     margin:auto;
     height:100%;
     width:100%;
-    background-color: $color-set4-very-light;
+    background-color: $color-set2-bg;
 }
 ul.jcard {
     margin:auto;
     display: block;
     padding:1em 1em 1em 1em;
-    background-color: $color-set4-bg;
+    
+    background-color: transparent;//$color-set2-light;
     list-style: none;
     align-content: center;
     text-align: center;
@@ -524,11 +525,14 @@ li.jokecard {
     margin:auto;
     margin-top: 2rem;
     width:40%;
-    background-color: $color-set4-less-dark;
+    background-color: $color-set2-less-dark;
     font-family: $font-stack1;
     font-size:1.2rem;
+    color:$color-set2-dark;
     padding:3rem 3rem 3rem 3rem;
-    box-shadow: 10px 10px 20px 10px $color-set4-very-light;
+    border-radius: 1.2em;
+    outline:none;
+    box-shadow: 10px 10px 20px 10px $color-set2-whitelight;
     text-align: center;
 }
 

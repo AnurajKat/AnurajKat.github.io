@@ -11,7 +11,7 @@ body {
   margin: auto;
   width: auto;
   height: auto;
-  background-color: #b4e800;
+  background-color: #B4E800;
   font-family: "Source Code Pro", monospace;
   align-content: center;
   text-align: center; }
@@ -422,7 +422,7 @@ ul.formy {
   transition: all 0.15s ease-in-out; }
 
 #validate:hover {
-  background-color: #b4e800;
+  background-color: #B4E800;
   color: #799c00; }
 
 #validate:active {
@@ -433,13 +433,13 @@ ul.formy {
   margin: auto;
   height: 100%;
   width: 100%;
-  background-color: #C649AE; }
+  background-color: #B4E800; }
 
 ul.jcard {
   margin: auto;
   display: block;
   padding: 1em 1em 1em 1em;
-  background-color: #AE008D;
+  background-color: transparent;
   list-style: none;
   align-content: center;
   text-align: center; }
@@ -449,11 +449,14 @@ li.jokecard {
   margin: auto;
   margin-top: 2rem;
   width: 40%;
-  background-color: #89006F;
+  background-color: #799c00;
   font-family: "Source Code Pro", monospace;
   font-size: 1.2rem;
+  color: #263100;
   padding: 3rem 3rem 3rem 3rem;
-  box-shadow: 10px 10px 20px 10px #C649AE;
+  border-radius: 1.2em;
+  outline: none;
+  box-shadow: 10px 10px 20px 10px #e0f884;
   text-align: center; }
 
 /*# sourceMappingURL=lel_scss.css.map */
