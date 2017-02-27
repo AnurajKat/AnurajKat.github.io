@@ -5,43 +5,16 @@
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script type= "text/javascript" src="js/jquery-ui/jquery-ui.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
-    <script type="text/javascript" src="js/anime.js"></script>
     <script type= "text/javascript" src="js/main.js"></script>
-    <script>
-    
-function validate() {
-  var email = $("#email").val();
-  if (validateEmail(email)) {
-    window.alert("K.");
-      return true;
-  } else {
-      window.alert("Invalid Email id");
-        return false;
-  }
-
-}
-
-        
-        
-$("#validate").click( function (){
-  var email = $("#email").val();
-  if (validateEmail()) {
-    window.alert("K.");
-  } else {
-      window.alert("Invalid Email id");
-  }
-    
-});
-    </script>
 </head>
 <body class="contbody">
     <div  class="contwrapper">
         <h2 class="contheader">Submisssion</h2>
         <form style="align-content:center;margin:auto;text-align:center;">
-        <ul class="formy">
+            <ul class="formy">
             <li>
-        <textarea rows="8" cols="65" name="main_content_joke">Enter joke||your_life_biography
-        </textarea>
+                <textarea rows="8" cols="65" name="main_content_joke">Enter joke||your_life_biography
+                </textarea>
             </li>
             <li>
                 <div class="submitdet">
@@ -58,19 +31,18 @@ $("#validate").click( function (){
             <li>
                 <div class="submitdet">
                     <p>your_name:</p>
-                    <input type="text" name="name"/> 
+                    <input type="text" id="n1" name="name"/> 
                 </div>
             </li>
             <li>
                 <div class="submitdet">
                     <p>alias:</p>
-                    <input type="text" name="alias_id"/> 
+                    <input type="text" id="n2"name="alias_id"/> 
                 </div>
             </li>
         </ul>
-</form>
-<button id="validate" onclick="validate()">Submit</button>
- 
-</div>
+        </form>
+        <button id="validate" onclick="validate()">Submit</button>
+    </div>
 </body>
 </html>

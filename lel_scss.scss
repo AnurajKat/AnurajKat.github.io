@@ -45,18 +45,22 @@ $colorlist: #001f1d,  #263100, #331900,  #6C0057,#006D29;
 $idlist : "m1","m2","m3","m4","m5";
 
 html{
-    margin:0px 0px 0px 0px ;
-    height: 100%;
-    overflow-y: auto;
-    overflow-x:auto;
+    margin:auto;
+    height:auto;
+    width:auto;
+    overflow-y:auto;
+    overflow-x:hidden;
 }
 
 body {
     margin:auto;
+    width:auto;
+    height:auto;
     background-color: $color-set2-bg;
     font-family: $font-stack1;
     align-content: center;
     text-align: center;
+    //overflow:scroll;
 }
 .headbar{
     position:fixed;
@@ -71,38 +75,45 @@ body {
 h1.page-header1 {
     position: fixed;
     margin:auto;
-    padding-top:0px;
     font-size: 3rem;
-    background-color:$color-set3-light;
+    padding:0.5rem 0rem 0.5rem 0rem;
+    background-color:$color-set2-less-dark;
     color:$color-set2-dark;
    // background: none;
     height: auto;
     width:100%;
     z-index:6;
+    @media screen and (max-width:500px) {
+        font-size: 2rem;
+    }
 }
 .framecont {
-	position: fixed;
-    margin-top:2.99em;
-    //margin:auto ;
-    height:100%;
-    width:100%;
+    position:fixed;
+	margin:auto;
+    top:11.86%;
+    width: 100%;
+    height:88.7%;
     background:transparent;
+    //overflow-y:scroll;
 }
 
 iframe {
     margin:auto ;
-    padding:auto;
     border:none;
-    overflow: visible;
+    //overflow:scroll;
     width:100%;
-    height:inherit;
-    
+    height:100%;    
+}
+body.picsybody{
+    margin:0px 0px 0px 0px;
+    height:auto;
+    //overflow:scroll;
 }
 
 ul{
     list-style: none;
-    margin:0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    margin:0px 0px 0px 0px ;
+    padding: 2.5rem 0px 2.5rem 0px;
     border:none;
 }
 li{
@@ -113,15 +124,13 @@ li{
     vertical-align: baseline;
 	margin:auto;
 	align-content:flex-start;
-	min-width:auto;
 	border-radius:20px;
-	min-height:12em;
-	height:auto;
+	height:100%;
 	width:auto;
     border:none;
-    max-width: 80%;
+    max-width: 100%;
 	display:inline-flex;
-	padding: 15px 5px 15px 5px;
+	//padding: 15px 5px 15px 5px;
 	background-color: $color-set3-less-dark;
     flex-direction: row;
     flex-flow: row;
@@ -131,7 +140,7 @@ li{
     align-items:center;
     text-align: center;
 	background-color:$color-set3-dark;
-	margin:5px 5px 5px 5px;	
+	margin:auto;	
 	border-radius:3px;
 	height:auto;
 	max-height:180px;
@@ -308,7 +317,7 @@ $position-left : 5.25;
     display:none;
     position:fixed;
     z-index:10;
-    padding-top:100px;
+    padding-top:80px;
     left:0;
     top:0;
     width:100%;
@@ -321,8 +330,11 @@ $position-left : 5.25;
     margin:auto;
     display:block;
     width:80%;
-    max-width:700px;
+    max-width:50%;
     height:auto;
+    max-height:75%;
+   
+    
 }
 #captionme {
     margin:auto;
@@ -331,7 +343,7 @@ $position-left : 5.25;
     max-width:700px;
     text-align:center;
     color: #ccc;
-    padding:10px 0;
+    padding:10px 0px;
     height: 150px;
 }
 .modal-content, #captionme {
@@ -489,3 +501,34 @@ ul.formy{
         background-color: $color-set2-whitelight;
         color: $color-set2-dark;
     }
+
+//text jokes
+.contlistjoke {
+    margin:auto;
+    height:100%;
+    width:100%;
+    background-color: $color-set4-very-light;
+}
+ul.jcard {
+    margin:auto;
+    display: block;
+    padding:1em 1em 1em 1em;
+    background-color: $color-set4-bg;
+    list-style: none;
+    align-content: center;
+    text-align: center;
+}
+
+li.jokecard {
+    display: flex;
+    margin:auto;
+    margin-top: 2rem;
+    width:40%;
+    background-color: $color-set4-less-dark;
+    font-family: $font-stack1;
+    font-size:1.2rem;
+    padding:3rem 3rem 3rem 3rem;
+    box-shadow: 10px 10px 20px 10px $color-set4-very-light;
+    text-align: center;
+}
+

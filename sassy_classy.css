@@ -4,19 +4,22 @@
   background: #b4e800; }
 
 html {
-  margin: 0px 0px 0px 0px;
+  margin: auto;
   height: 100%;
   width: 100%;
   overflow: hidden; }
 
+body {
+  margin: auto; }
+
 .content {
-  margin: 0% 0% 0% 0%;
+  margin: auto;
   width: 100%;
   height: 100%; }
 
 h1 {
-  margin: 0 0 0 0;
-  padding: 0;
+  margin: auto;
+  padding: none;
   width: 100%;
   height: 100%;
   display: flex;
@@ -31,7 +34,7 @@ h1 {
   background: #f37800;
   justify-content: center;
   z-index: 1;
-  transition: font-size 250ms cubic-bezier(0.59, 0.04, 0.3, 1.43); }
+  transition: font-size 0.2s cubic-bezier(0.59, 0.04, 0.3, 1.43); }
   @media screen and (min-width: 768px) {
     h1 {
       font-size: 80px; } }
@@ -53,9 +56,9 @@ h1 {
     text-align: center;
     position: absolute;
     justify-content: center;
-    color: #799c00;
+    color: #263100;
     background: #b4e800;
-    animation: roundAndRoundAnimation 2s linear; }
+    animation: roundAndRoundAnimation 1s linear; }
 
 a {
   color: #331900;
@@ -72,9 +75,9 @@ a:visited {
 
 @keyframes roundAndRoundAnimation {
   0% {
-    clip-path: polygon(0% 0%, 0% 0%, 0% 25%, 0% 25%); }
+    clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%); }
   50% {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 0% 25%); }
+    clip-path: polygon(0% 0%, 50% 0%, 50% 50%, 0% 50%); }
   100% {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
   /*75% {

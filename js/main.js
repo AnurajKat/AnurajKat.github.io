@@ -1,17 +1,6 @@
 
-var picture_location = "";
-
-/*
-function validateEmail(email) {
-    "use strict";
-    var re =  /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-    return re.test(email);
-}*/
  $(function() {
     $(".mainmenu").draggable();});
-
-
-
 var b=true;
 function moggle() {
           
@@ -39,7 +28,7 @@ function newpicpage(imgid) {
     var ds= document.getElementById(imgid1);
     modal.style.display = "block";
     modalImg.src = ds.src;
-    captionT = ss.getElementsByClassName("caption").content;
+    captionT = ss.getElementsByClassName("caption").value;
 }
 var span = document.getElementsByClassName("close")[0];
 function closeme() { 
@@ -51,4 +40,36 @@ function closeme() {
 function validateEmail(email) {
   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   return regex.test(email);
+}
+function validateIp(inputme)
+{
+    if(inputme === ""){
+        return false;
+    }
+    else
+        {return true;}
+}
+function validate() {
+  var email = $("#email").val();
+  if (validateEmail(email)) {
+    //window.alert("K.");
+      var d= document.getElementById("n1").value;
+      if(validateIp(d)) {
+          var e= document.getElementById("n2").value;
+          if(validateIp(e)) {
+              window.alert("okay good.");
+          }
+          else {
+              window.alert("alias is empty.");
+          }
+      } else {
+          window.alert("name field is empty.");
+      }
+  
+      return true;
+  } else {
+      window.alert("Invalid Email id");
+        return false;
+  }
+
 }

@@ -1,13 +1,16 @@
 @import "https://fonts.googleapis.com/css?family=Source+Code+Pro";
 @import "https://fonts.googleapis.com/css?family=Press+Start+2P";
 html {
-  margin: 0px 0px 0px 0px;
-  height: 100%;
+  margin: auto;
+  height: auto;
+  width: auto;
   overflow-y: auto;
-  overflow-x: auto; }
+  overflow-x: hidden; }
 
 body {
   margin: auto;
+  width: auto;
+  height: auto;
   background-color: #b4e800;
   font-family: "Source Code Pro", monospace;
   align-content: center;
@@ -25,33 +28,39 @@ body {
 h1.page-header1 {
   position: fixed;
   margin: auto;
-  padding-top: 0px;
   font-size: 3rem;
-  background-color: #20b8ad;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  background-color: #799c00;
   color: #263100;
   height: auto;
   width: 100%;
   z-index: 6; }
+  @media screen and (max-width: 500px) {
+    h1.page-header1 {
+      font-size: 2rem; } }
 
 .framecont {
   position: fixed;
-  margin-top: 2.99em;
-  height: 100%;
+  margin: auto;
+  top: 11.86%;
   width: 100%;
+  height: 88.7%;
   background: transparent; }
 
 iframe {
   margin: auto;
-  padding: auto;
   border: none;
-  overflow: visible;
   width: 100%;
-  height: inherit; }
+  height: 100%; }
+
+body.picsybody {
+  margin: 0px 0px 0px 0px;
+  height: auto; }
 
 ul {
   list-style: none;
   margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  padding: 2.5rem 0px 2.5rem 0px;
   border: none; }
 
 li {
@@ -61,15 +70,12 @@ li {
   vertical-align: baseline;
   margin: auto;
   align-content: flex-start;
-  min-width: auto;
   border-radius: 20px;
-  min-height: 12em;
-  height: auto;
+  height: 100%;
   width: auto;
   border: none;
-  max-width: 80%;
+  max-width: 100%;
   display: inline-flex;
-  padding: 15px 5px 15px 5px;
   background-color: #00645d;
   flex-direction: row;
   flex-flow: row; }
@@ -79,7 +85,7 @@ li {
   align-items: center;
   text-align: center;
   background-color: #001f1d;
-  margin: 5px 5px 5px 5px;
+  margin: auto;
   border-radius: 3px;
   height: auto;
   max-height: 180px;
@@ -255,7 +261,7 @@ img {
   display: none;
   position: fixed;
   z-index: 10;
-  padding-top: 100px;
+  padding-top: 80px;
   left: 0;
   top: 0;
   width: 100%;
@@ -268,8 +274,9 @@ img {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
-  height: auto; }
+  max-width: 50%;
+  height: auto;
+  max-height: 75%; }
 
 #captionme {
   margin: auto;
@@ -278,7 +285,7 @@ img {
   max-width: 700px;
   text-align: center;
   color: #ccc;
-  padding: 10px 0;
+  padding: 10px 0px;
   height: 150px; }
 
 .modal-content, #captionme {
@@ -421,5 +428,32 @@ ul.formy {
 #validate:active {
   background-color: #e0f884;
   color: #263100; }
+
+.contlistjoke {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background-color: #C649AE; }
+
+ul.jcard {
+  margin: auto;
+  display: block;
+  padding: 1em 1em 1em 1em;
+  background-color: #AE008D;
+  list-style: none;
+  align-content: center;
+  text-align: center; }
+
+li.jokecard {
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+  width: 40%;
+  background-color: #89006F;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.2rem;
+  padding: 3rem 3rem 3rem 3rem;
+  box-shadow: 10px 10px 20px 10px #C649AE;
+  text-align: center; }
 
 /*# sourceMappingURL=lel_scss.css.map */
