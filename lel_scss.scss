@@ -88,10 +88,12 @@ h1.page-header1 {
     }
 }
 .framecont {
+    //z-index:6;
     position:fixed;
 	margin:auto;
-    top:11.86%;
-    width: 100%;
+    top:11.8%;
+    left:10%;
+    width: 80%;
     height:88.7%;
     background:transparent;
     //overflow-y:scroll;
@@ -536,3 +538,8 @@ li.jokecard {
     text-align: center;
 }
 
+//about us page.
+body.aboutus{
+    margin:auto;
+    background-color: color-set5-bg;
+}

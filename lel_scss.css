@@ -42,8 +42,9 @@ h1.page-header1 {
 .framecont {
   position: fixed;
   margin: auto;
-  top: 11.86%;
-  width: 100%;
+  top: 11.8%;
+  left: 10%;
+  width: 80%;
   height: 88.7%;
   background: transparent; }
 
